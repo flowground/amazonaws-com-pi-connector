@@ -1,6 +1,6 @@
 {
     "title": "AWS Performance Insights",
-    "description": "<p>AWS Performance Insights enables you to monitor and explore different dimensions of database load based on data captured from a running RDS instance. The guide provides detailed information about Performance Insights data types, parameters and errors. For more information about Performance Insights capabilities see <a href=\"http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html\">Using Amazon RDS Performance Insights </a> in the <i>Amazon RDS User Guide</i>.</p> <p> The AWS Performance Insights API provides visibility into the performance of your RDS instance, when Performance Insights is enabled for supported engine types. While Amazon CloudWatch provides the authoritative source for AWS service vended monitoring metrics, AWS Performance Insights offers a domain-specific view of database load measured as Average Active Sessions and provided to API consumers as a 2-dimensional time-series dataset. The time dimension of the data provides DB load data for each time point in the queried time range, and each time point decomposes overall load in relation to the requested dimensions, such as SQL, Wait-event, User or Host, measured at that time point.</p>",
+    "description": "AWS Performance Insights enables you to monitor and explore different dimensions\nof database load based on data captured from a running RDS instance. The guide\nprovides detailed information about Performance Insights data types, parameters\nand errors. For more information about Performance Insights capabilities see \nUsing Amazon RDS Performance Insights\n[http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html] \nin the Amazon RDS User Guide.\n\n The AWS Performance Insights API provides visibility into the performance of\nyour RDS instance, when Performance Insights is enabled for supported engine\ntypes. While Amazon CloudWatch provides the authoritative source for AWS service\nvended monitoring metrics, AWS Performance Insights offers a domain-specific\nview of database load measured as Average Active Sessions and provided to API\nconsumers as a 2-dimensional time-series dataset. The time dimension of the data\nprovides DB load data for each time point in the queried time range, and each\ntime point decomposes overall load in relation to the requested dimensions, such\nas SQL, Wait-event, User or Host, measured at that time point.",
     "docsUrl": "https://docs.aws.amazon.com/pi/",
     "url": "https://api.apis.guru/v2/specs/amazonaws.com/pi/2018-02-27/swagger.json",
     "envVars": {},
@@ -20,7 +20,7 @@
                 "label": "Custom Server URL",
                 "viewClass": "TextFieldView"
             },
-            "hmac": {
+            "auth_hmac": {
                 "label": "Authorization (hmac)",
                 "viewClass": "TextFieldView",
                 "note": "Amazon Signature authorization v4"
@@ -38,7 +38,7 @@
     "actions": {
         "DescribeDimensionKeys": {
             "main": "./lib/actions/DescribeDimensionKeys.js",
-            "title": "For a specific time period, retrieve the top <code>N</code> dimension keys for a metric.",
+            "title": "DescribeDimensionKeys",
             "description": "For a specific time period, retrieve the top <code>N</code> dimension keys for a metric.",
             "fields": {
                 "verbose": {
@@ -55,7 +55,7 @@
         },
         "GetResourceMetrics": {
             "main": "./lib/actions/GetResourceMetrics.js",
-            "title": "Retrieve Performance Insights metrics for a set of data sources, over a time period. You can provide specific dimension groups and dimensions, and provide aggregation and filtering criteria for each group.",
+            "title": "GetResourceMetrics",
             "description": "Retrieve Performance Insights metrics for a set of data sources, over a time period. You can provide specific dimension groups and dimensions, and provide aggregation and filtering criteria for each group.",
             "fields": {
                 "verbose": {

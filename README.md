@@ -5,7 +5,7 @@
 A generated **flow**ground connector for the AWS Performance Insights API (version 2018-02-27).
 
 Generated from: https://api.apis.guru/v2/specs/amazonaws.com/pi/2018-02-27/swagger.json<br/>
-Generated at: 2019-05-07T17:36:05+03:00
+Generated at: 2019-07-08T14:13:12+03:00
 
 ## API Description
 
@@ -17,7 +17,8 @@ Supported authorization schemes:
 - API Key
 ## Actions
 
-### For a specific time period, retrieve the top <code>N</code> dimension keys for a metric.
+### DescribeDimensionKeys
+> For a specific time period, retrieve the top <code>N</code> dimension keys for a metric.<br/>
 
 #### Input Parameters
 * `Action` - _required_
@@ -30,7 +31,8 @@ Supported authorization schemes:
 * `X-Amz-Signature` - _optional_
 * `X-Amz-SignedHeaders` - _optional_
 
-### Retrieve Performance Insights metrics for a set of data sources, over a time period. You can provide specific dimension groups and dimensions, and provide aggregation and filtering criteria for each group.
+### GetResourceMetrics
+> Retrieve Performance Insights metrics for a set of data sources, over a time period. You can provide specific dimension groups and dimensions, and provide aggregation and filtering criteria for each group.<br/>
 
 #### Input Parameters
 * `Action` - _required_
